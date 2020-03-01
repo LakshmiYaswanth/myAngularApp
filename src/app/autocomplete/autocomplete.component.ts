@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl} from '@angular/forms';
 
 @Component({
   selector: 'app-autocomplete',
@@ -8,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class AutocompleteComponent implements OnInit {
 
   constructor() { }
+  myControl = new FormControl();
+  options: string[] = ['cricket', 'football', 'hockey',"gulf","basket ball"];
 
   ngOnInit() {
   }

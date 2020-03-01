@@ -7,6 +7,7 @@ import { ButtonComponent } from './button/button.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { HiperlinkComponent } from './hiperlink/hiperlink.component';
 import { ImageComponent } from './image/image.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
@@ -32,6 +33,19 @@ import { WaitforalertComponent } from './waitforalert/waitforalert.component';
 import { MousehoverComponent } from './mousehover/mousehover.component';
 import { AdvancedWebTablesComponent } from './advanced-web-tables/advanced-web-tables.component';
 import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { TooltipModule } from 'ng2-tooltip-directive';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
+
+import { MatButtonModule, MatFormFieldModule, MatInputModule, MatRippleModule } from '@angular/material';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,14 +75,29 @@ import { HomeComponent } from './home/home.component';
     WaitforalertComponent,
     MousehoverComponent,
     AdvancedWebTablesComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    DragDropModule,
+    MatAutocompleteModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatTooltipModule,
+    MatDatepickerModule,
+    TooltipModule,
+    MatPaginatorModule,
+    MatSortModule,
+    ReactiveFormsModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

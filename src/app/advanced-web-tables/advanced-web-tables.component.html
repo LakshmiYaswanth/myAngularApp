@@ -1,0 +1,39 @@
+<body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-7 mx-auto">
+          <div class="card card-signin my-5">
+            <div class="card-body">
+              <h5 class="card-title text-center">Advanced W eb Table</h5>
+                <div #alert class="alert alert-primary " role="alert">
+<mat-paginator 
+              [pageSizeOptions]="[5, 10, 25, 100]">
+</mat-paginator>
+<table matSort (matSortChange)="sortData($event)">
+    <tr>
+      <th mat-sort-header="name">Dessert (100g)</th><br/>
+      <th mat-sort-header="calories">Calories</th><br/>
+      <th mat-sort-header="fat">Fat (g)</th><br/>
+      <th mat-sort-header="carbs">Carbs (g)</th><br/>
+      <th mat-sort-header="protein">Protein (g)</th><br/>
+    </tr>
+  
+    <tr *ngFor="let dessert of sortedData">
+      <td>{{dessert.name}}</td><br/>
+      <td>{{dessert.calories}}</td><br/>
+      <td>{{dessert.fat}}</td><br/>
+      <td>{{dessert.carbs}}</td><br/>
+      <td>{{dessert.protein}}</td><br/>
+    </tr>
+  </table>
+  <mat-paginator [length]="100"
+              [pageSize]="10"></mat-paginator>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body>

@@ -1,3 +1,40 @@
-
-
+<body>
+    <div class="container">
+      <div class="row">
+        <!-- <div class="col-sm-9 col-md-7 col-lg-5 mx-auto"> -->
+          <div class="card card-signin my-5">
+            <div class="card-body">
+              <h2 class="card-title text-center">Sortable</h2>
+<div cdkDropListGroup>
+    <div class="example-container">
+      <h4>To do</h4>
+  
+      <div
+        cdkDropList
+        [cdkDropListData]="todo"
+        class="example-list"
+        (cdkDropListDropped)="drop($event)">
+        <div class="example-box" *ngFor="let item of todo" cdkDrag>{{item}}</div>
+      </div>
+    </div>
+  
+    <div class="example-container">
+      <h4>Done</h4>
+  
+      <div
+        cdkDropList
+        [cdkDropListData]="done"
+        class="example-list"
+        (cdkDropListDropped)="drop($event)">
+        <div class="example-box" *ngFor="let item of done" cdkDrag>{{item}}</div>
+      </div>
+    </div>
+  </div>
     
+</div>
+</div>
+</div>
+</div>
+<!-- </div> -->
+
+</body>  

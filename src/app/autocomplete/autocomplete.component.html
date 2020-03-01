@@ -1,1 +1,29 @@
+<body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+          <div class="card card-signin my-5">
+            <div class="card-body">
+              <h2 class="card-title text-center">Auto complete</h2>
+              <form class="example-form">
+                <mat-form-field class="example-full-width">
+                  <input type="text"
+                         placeholder="Pick one"
+                         aria-label="Number"
+                         matInput
+                         [formControl]="myControl"
+                         [matAutocomplete]="auto">
+                  <mat-autocomplete #auto="matAutocomplete">
+                    <mat-option *ngFor="let option of options" [value]="option">
+                      {{option}}
+                    </mat-option>
+                  </mat-autocomplete>
+                </mat-form-field>
+              </form>
+</div>
+</div>
+</div>
+</div>
+</div>
 
+</body>

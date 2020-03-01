@@ -8,6 +8,29 @@ import { Component, OnInit } from '@angular/core';
 export class WindowComponent implements OnInit {
 
   constructor() { }
+  my() {
+   var myWindow = window.open("", "", "width=100, height=100");
+  }
+ 
+     myFunction() {
+      var myWindow = window.open("", "", "width=100, height=100");
+}
+  
+      mywindows() {
+       var myWindow = window.open("", "", "width=100, height=100");
+
+}
+      
+         mybom() {
+          setTimeout(function(){ var  myWindow = window.open("", "", "width=100, height=100"); }, 5000);
+      
+        }
+        
+     
+
+
+
+  
 
   ngOnInit() {
   }

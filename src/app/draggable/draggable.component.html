@@ -1,0 +1,21 @@
+<body>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-lg-8 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Draggable</h5>
+<p>
+    <button (click)="changePosition()"class="btn btn-dark">Change element position</button>
+  </p>
+  
+  <div class="example-box" cdkDrag [cdkDragFreeDragPosition]="dragPosition">
+    Drag me around
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body>  

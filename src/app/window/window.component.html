@@ -1,2 +1,37 @@
 
-  
+<body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+          <div class="card card-signin my-5">
+            <div class="card-body">
+              <h5 class="card-title text-center">Window</h5>
+                <div #alert class="alert alert-primary " role="alert">
+                 <label for="inputName">
+                    Click button to open home page in New Window</label><br/>
+                    <button (click)="my()">Open Home Page</button>
+                </div>
+                <div #alert class="alert alert-primary " role="alert">
+                  <label for="inputName">
+                    Find the number of opened windows</label><br/>
+                      <button (click)="myFunction()">Open Multiple Windows</button>
+                </div>
+                <div #alert class="alert alert-primary " role="alert">
+                  <label for="inputName">
+                    Close all except this window</label><br/>
+                      <button (click)="mywindows()">Do not close me</button>
+                   </div>
+                   <div #alert class="alert alert-primary " role="alert">
+                    <label for="inputName">
+                        Wait for 2 new Windows to open</label><br/>
+                        <button (click)="mybom()">Wait for 5 seconds</button>
+                   </div>
+                  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>  

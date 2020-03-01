@@ -1,7 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background: url('https://i.postimg.cc/ZnHTP71s/aircraft-airplane-boat-1575833.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
 .box-top{
     margin-top: 20px;
 }
+.mat-tooltip {
+    font-size: 20px !important;
+    background-color:blue;
+    }
