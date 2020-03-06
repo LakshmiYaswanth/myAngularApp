@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class FrameComponent implements OnInit {
 
   constructor() { }
+  change() {
+    document.getElementById("demo").innerHTML = "Hello World";
+  }
 
   ngOnInit() {
   }

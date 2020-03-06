@@ -6,10 +6,10 @@
           <div class="card-body">
             <h5 class="card-title text-center">Draggable</h5>
 <p>
-    <button (click)="changePosition()"class="btn btn-dark">Change element position</button>
+    <button id="btn" name="btn" (click)="changePosition()"class="btn btn-dark">Change element position</button>
   </p>
   
-  <div class="example-box" cdkDrag [cdkDragFreeDragPosition]="dragPosition">
+  <div id="sample-box" class="sample-box" cdkDrag [cdkDragFreeDragPosition]="dragPosition">
     Drag me around
   </div>
 </div>
