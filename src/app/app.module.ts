@@ -44,6 +44,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
 
 import { MatButtonModule, MatFormFieldModule, MatInputModule, MatRippleModule } from '@angular/material';
+import { MainpageComponent } from './mainpage/mainpage.component';
 
 
 @NgModule({
@@ -77,7 +78,8 @@ import { MatButtonModule, MatFormFieldModule, MatInputModule, MatRippleModule } 
     AdvancedWebTablesComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MainpageComponent
 
   ],
   imports: [

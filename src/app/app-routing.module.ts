@@ -28,9 +28,14 @@ import { WaitfortextchangeComponent } from './waitfortextchange/waitfortextchang
 import { WaitforalertComponent } from './waitforalert/waitforalert.component';
 import { MousehoverComponent } from './mousehover/mousehover.component';
 import { AdvancedWebTablesComponent } from './advanced-web-tables/advanced-web-tables.component';
+import { MainpageComponent } from './mainpage/mainpage.component';
 
 
 const routes: Routes = [
+  {
+    path:'mainpage',
+    component:MainpageComponent
+  },
   {
     path:'home',
     component:HomeComponent
@@ -120,7 +125,7 @@ const routes: Routes = [
   }, 
   {
     path:'',
-    redirectTo:'',
+    redirectTo:'mainpage',
     pathMatch:'full'
   }
 ];
